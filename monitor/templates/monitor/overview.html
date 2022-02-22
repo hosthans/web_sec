@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Overview</title>
+</head>
+<body>
+
+<div>
+    <a href="{% url 'home'%}">
+        <button>Back</button>
+    </a>
+</div>
+
+<h6>Last 5 Transmittions</h6>
+    {% if ordered %}
+    <ul>
+    {% for q in ordered %}
+        <div style="font-size: 10px">{{ q.packages_l_h }} <p style="color: deepskyblue">{{ q.update_time_p_l_h }}</p> </div>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No data available.</p>
+{% endif %}
+</body>
+</html>

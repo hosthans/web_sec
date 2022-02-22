@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<style>
+    #to_overview{
+        margin: auto;
+        width: 90%;
+    }
+    .header{
+        margin: auto;
+        width: 90%;
+    }
+</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Safe_yourIT</title>
+</head>
+<body>
+<div class="header">
+    <h1 style="color: blue"><a href="{% url 'overview'%}">
+    </a>
+        IT-Secure
+    </h1>
+</div>
+<div id="to_overview">
+    <a href="{% url 'overview'%}">
+        <button>Overview</button>
+    </a>
+</div>
+
+</body>
+</html>
